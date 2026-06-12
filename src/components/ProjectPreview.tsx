@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import type { Project } from "../data/projects";
 
 interface ProjectPreviewProps {
-  project: Project | null;
+  project: Project;
   visible: boolean;
 }
 
