@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+body {
+  background-color: #000000;
+}
+
+/* --- Custom scrollbar --- */
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #6b5fa0 transparent;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  /* Transparent border + background-clip leaves breathing room around the thumb */
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  background-color: #4b4470;
+  background-image: linear-gradient(to bottom, #8d7dca, #5a6bff);
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, #a99ce0, #7b87ff);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* --- Cursor trail of programming tokens --- */
+@keyframes cursor-trail {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6) rotate(var(--rot, 0deg));
+  }
+  15% {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) scale(1) rotate(var(--rot, 0deg));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -120%) scale(0.85) rotate(var(--rot, 0deg));
+  }
+}
+
+.cursor-trail-char {
+  position: absolute;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(190, 176, 237, 0.9);
+  text-shadow: 0 0 8px rgba(141, 125, 202, 0.5);
+  white-space: nowrap;
+  will-change: transform, opacity;
+  animation: cursor-trail 900ms ease-out forwards;
+}
+
+/* Faint grid overlay used behind the skills section */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
