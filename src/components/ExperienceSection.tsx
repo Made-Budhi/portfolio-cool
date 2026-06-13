@@ -15,7 +15,7 @@ export function ExperienceSection() {
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/50">
           Career
         </p>
-        <h2 className="mt-3 mb-12 text-3xl font-bold text-white sm:mb-20 sm:text-5xl">
+        <h2 className="mt-3 mb-12 font-display text-4xl italic text-white sm:mb-20 sm:text-6xl">
           Professional Experience
         </h2>
 

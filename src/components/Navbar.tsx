@@ -12,6 +12,8 @@ const NAV_ITEMS: NavItem[] = [
   { id: "home", label: "Home" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
+  { id: "certifications", label: "Certifications" },
   { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
 ];
@@ -67,7 +69,7 @@ export function Navbar() {
           </button>
 
           {/* Desktop links */}
-          <ul className="hidden items-center gap-8 md:flex">
+          <ul className="hidden items-center gap-6 lg:flex">
             {NAV_ITEMS.map((item) => (
               <li key={item.id}>
                 <button
@@ -90,7 +92,7 @@ export function Navbar() {
             onClick={() => setMenuOpen((open) => !open)}
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
-            className="relative h-6 w-6 md:hidden"
+            className="relative h-6 w-6 lg:hidden"
           >
             <span
               className={`absolute left-0 top-2 h-px w-6 bg-white transition-transform duration-300 ${
@@ -107,8 +109,8 @@ export function Navbar() {
 
         {/* Mobile menu */}
         <ul
-          className={`overflow-hidden border-t border-white/5 transition-[max-height,opacity] duration-300 md:hidden ${
-            menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+          className={`overflow-hidden border-t border-white/5 transition-[max-height,opacity] duration-300 lg:hidden ${
+            menuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           {NAV_ITEMS.map((item) => (

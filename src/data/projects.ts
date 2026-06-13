@@ -40,7 +40,7 @@ export const projects: Project[] = [
     accent: "linear-gradient(120deg, #0d1117 0%, #1f6feb 50%, #8957e5 100%)",
     
     tagline: "An AI-powered GitHub App that acts as an automated first-line of defense for code security using a fine-tuned Llama-3.1 model.",
-    role: "Software Developer",
+    role: "Personal Project",
     tools: [
       "Python", 
       "Flask", 
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     year: "2026",
     accent: "linear-gradient(135deg, #fa709a 0%, #fee140 100%);",
     tagline: "Building a highly scalable, self-hosted microservices architecture for private cloud storage.",
-    role: "Lead Engineer",
+    role: "Personal Project",
     tools: [
       "Docker",  
       "Nextcloud", 
@@ -117,11 +117,11 @@ export const projects: Project[] = [
   {
     id: "bali-school-kids",
     title: "Bali School Kids",
-    category: "Full-Stack Web Development",
+    category: "Web Development",
     year: "2025",
     accent: "linear-gradient(213deg, #8B5CF6 0%, #EC4899 100%)",
     tagline: "A role-based platform bridging the gap between sponsors, schools, and foster children.",
-    role: "Full-Stack Developer",
+    role: "Team Lead & Full-Stack Developer",
     tools: ["React", "TypeScript", "Supabase"],
     overview: "Bali School Kids is a web platform built to bring transparency and efficiency to the Bali School Kids initiative. By providing a centralized, role-based system, the platform streamlines sponsorship management and equips schools with the necessary tools to monitor and report on foster children's academic progress, ensuring sponsors stay connected to their impact.",
     sections: [
@@ -147,7 +147,7 @@ export const projects: Project[] = [
     year: "2024",
     accent: "linear-gradient(213deg, #a8edea 0%, #fed6e3 100%)",
     tagline: "A digital gateway connecting tourists with the rich culture and natural beauty of Bali's tourist villages.",
-    role: "Full-Stack Developer",
+    role: "Frontend Developer",
     tools: ["Laravel", "PHP", "MySQL", "JavaScript", "Figma", "Postman"],
     overview: "This project is a comprehensive information system aimed at promoting and cataloging tourist villages across the Bali region, Indonesia. Built as a Campus Project Based Learning initiative, the platform is designed to facilitate tourists who want to explore local traditions, natural landscapes, and unique cultural experiences. By digitizing this information, the application aims to boost local tourism and support community economies.",
     sections: [
@@ -169,13 +169,13 @@ export const projects: Project[] = [
   {
     id: "broom-project",
     title: "BRoom Project",
-    category: "Web Application",
+    category: "Web Development",
     year: "2023",
     accent: "linear-gradient(213deg, #a8edea 0%, #fed6e3 100%)", 
     
     // --- Story / blog content ---
     tagline: "A comprehensive facility reservation system featuring multi-role access and automated approval workflows.",
-    role: "Full Stack Developer",
+    role: "Team Lead & Full-Stack Developer",
     tools: [
       "PHP", 
       "CodeIgniter", 

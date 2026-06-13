@@ -51,10 +51,6 @@ export function ContactSection() {
           Let&apos;s build something together.
         </h2>
 
-        <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/60 sm:text-xl">
-          My direct message is always open sooo...<br />Hit me up!
-        </p>
-
         {/* Email */}
         <a
           href={`mailto:${email}`}

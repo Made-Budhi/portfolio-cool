@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+/* Distinctive display serif used only for section headings (via `font-display`).
+   Everything else keeps the default serif. */
+@theme {
+  --font-display: "Instrument Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 body {
   background-color: #000000;
 }
@@ -66,6 +72,38 @@ html {
   white-space: nowrap;
   will-change: transform, opacity;
   animation: cursor-trail 900ms ease-out forwards;
+}
+
+/* --- Skills logo marquee --- */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animate-marquee-left {
+  animation: marquee-left var(--marquee-duration, 50s) linear infinite;
+  will-change: transform;
+}
+.animate-marquee-right {
+  animation: marquee-right var(--marquee-duration, 50s) linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation: none;
+  }
 }
 
 /* Faint grid overlay used behind the skills section */
